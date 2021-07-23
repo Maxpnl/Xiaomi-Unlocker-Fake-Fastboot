@@ -1,10 +1,10 @@
 # Xiaomi Unlocker Fake Fastboot
 
 ## What it does
-This tool is a workaround for errors like "read failed, please reboot the device or refresh" and similar errors, it will fake communications with the device to get the signature to run the `fastboot oem unlock SIGNATURE_FILE`
+This tool is a workaround for errors like "read failed, please refresh or reboot the device" and similar errors, it will fake communications with the device to get the signature to run the `fastboot oem unlock SIGNATURE_FILE`
 
 ## When should you use it
-To understand if this tool could fix your problems with the Xiaomi Unlocker tool, open the cmd from windows start and run the following commands:
+To understand if this tool could fix your problems with the Xiaomi Unlocker tool, connect the phone in fastboot mode, open the cmd from windows start and run the following commands:
 - `cd C:\FOLDER\TO\XIAOMI\UNLOCKER\TOOL`
 - `fastboot oem device-info` 
 
@@ -64,5 +64,5 @@ Now, you are almost done, the only thing left to do is to run `fastboot_orig oem
 If it succeeds, I hope you had less of a hard time than I had! Otherwise just keep spamming the command, if the device reboots without succeeding, try again starting from the beginning of the **Unlocking the bootloader** chapter.
 
 ## Compiling
-Just use mingw and run `gcc fastboot.c -o fastboot.exe`
+You should not trust running unknown code in your machine, so I suggest you to use mingw and run `gcc fastboot.c -o fastboot.exe` after taking a look at `fastboot.c` and making sure you don't see anything you don't like, if you are lazy and you don't care too much about your own security I precompiled the binary.
 
