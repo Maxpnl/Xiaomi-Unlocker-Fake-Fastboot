@@ -1,0 +1,7 @@
+...
+(bootloader) Verity mode: true
+(bootloader) Device unlocked: false
+(bootloader) Device critical unlocked: false
+(bootloader) Charger screen enabled: false
+OKAY [  0.010s]
+finished. total time: 0.011s

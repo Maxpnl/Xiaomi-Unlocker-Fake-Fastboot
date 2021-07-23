@@ -1,0 +1,6 @@
+oem lks
+oem device-info
+getvar product
+getvar token
+getvar tokenversion
+oem unlock "%s"
