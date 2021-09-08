@@ -36,10 +36,10 @@ void writeToLog(int argc, char *argv[]){
 int main(int argc, char *argv[], char *envp[]) {
     if (argc == 2 && strcmp(argv[1], "devices") == 0 ){
         printFileContents("devices.txt");
-    } else if (argc >= 5 && strcmp(argv[3], "oem") == 0){
-        if (strcmp(argv[4], "device-info") == 0) {
+    } else if (argc >= 5 && strcmp(argv[1], "oem") == 0){
+        if (strcmp(argv[2], "device-info") == 0) {
             printFileContents("oem device-info.txt");
-        } else if (strcmp(argv[4], "lks") == 0) {
+        } else if (strcmp(argv[2], "lks") == 0) {
             printFileContents("oem lks.txt");
         }
             else {
